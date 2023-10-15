@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>wineAPI - Documentation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #000000d0;
+        color: #ffffff;
+      }
+
+      h1 {
+        color: #943939;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 40px;
+      }
+
+      h2 {
+        color: #943939;
+      }
+
+      p {
+        margin-top: 10px;
+      }
+
+      code {
+        background-color: #9c9c9cad;
+        padding: 2px;
+        border-radius: 4px;
+      }
+
+      pre {
+        background-color: #9c9c9cad;
+        padding: 10px;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+
+      .gif-container {
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>wineAPI - Documentation</h1>
+    <p>Bienvenue dans la documentation de wineAPI. Vous trouverez ci-dessous les routes disponibles et leur utilisation :</p>
+
+    <h2>GET tous les vins /all</h2>
+    <p>Renvoie tous les vins de la base de données.</p>
+    <code>GET /all</code>
+    <p>Exemple de chemin</p>
+    <code>http://localhost:3000/all</code>
+    <p>Exemple de réponse :</p>
+    <pre>
+      {
+        "vins": [
+          {
+            "nom": "Château Margaux",
+            "region": "Bordeaux",
+            "cepage": "Cabernet Sauvignon",
+            "type": "Rouge",
+            "annee": 2015,
+            "note": 95,
+            "description": "Un vin rouge d'exception de la région de Bordeaux...",
+            "recommandation": "Parfait pour accompagner un filet mignon ou un plateau de fromages.",
+            "image": "lien_vers_image1.jpg"
+          },
+          {
+            "nom": "Domaine de la Vougeraie",
+            "region": "Bourgogne",
+            "cepage": "Pinot Noir",
+            "type": "Rouge",
+            "annee": 2017,
+            "note": 91,
+            "description": "Un Pinot Noir de Bourgogne avec des arômes subtils de cerises et de roses. Il séduit par sa finesse et son équilibre.",
+            "recommandation": "Accompagnez-le avec un plateau de fromages variés.",
+            "image": "lien_vers_image12.jpg"
+          },
+          {
+              "nom": "Château Haut-Brion",
+              "region": "Bordeaux",
+              "cepage": "Merlot",
+              "type": "Rouge",
+              "annee": 2016,
+              "note": 97,
+              "description": "Un vin rouge de Pessac-Léognan, il présente des saveurs de cassis, de tabac et de cuir, avec une grande profondeur.",
+              "recommandation": "Parfait pour accompagner un plat de côte de bœuf grillée.",
+              "image": "lien_vers_image13.jpg"
+          },
+          {
+              "nom": "Domaine Zind-Humbrecht",
+              "region": "Alsace",
+              "cepage": "Riesling",
+              "type": "Blanc",
+              "annee": 2018,
+              "note": 94,
+              "description": "Un Riesling d'Alsace sec et minéral, avec des arômes de pêche et d'agrumes. Il reflète la pureté du terroir alsacien.",
+              "recommandation": "Idéal en apéritif ou avec des fruits de mer.",
+              "image": "lien_vers_image14.jpg"
+          },
+          // ... autres vins
+        ]
+      }
+    </pre>
+
+    <h2>GET un vin par nom /nom/:nom</h2>
+    <p>Renvoie un vin en fonction de son nom.</p>
+    <code>GET /nom/:nom</code>
+    <p>Exemple de chemin</p>
+    <code>http://localhost:3000/nom/chateau-margaux</code>
+    <p>Exemple de réponse :</p>
+    <pre>
+      {
+        "vin": {
+          "nom": "Château Margaux",
+          "region": "Bordeaux",
+          "cepage": "Cabernet Sauvignon",
+          "type": "Rouge",
+          "annee": 2015,
+          "note": 95,
+          "description": "Un vin rouge d'exception de la région de Bordeaux...",
+          "recommandation": "Parfait pour accompagner un filet mignon ou un plateau de fromages.",
+          "image": "lien_vers_image1.jpg"
+        }
+      }
+    </pre>
+    
+    <h2>GET vins par région /region/:region</h2>
+    <p>Renvoie une liste de vins en fonction de sa région.</p>
+    <code>GET /region/:region</code>
+    <p>Exemple de chemin</p>
+    <code>http://localhost:3000/region/bourgogne</code>    
+    <p>Exemple de réponse :</p>
+    <pre>
+      {
+        "vins": [
+          {
+            "nom": "Domaine Coche-Dury",
+            "region": "Bourgogne",
+            "cepage": "Chardonnay",
+            "type": "Blanc",
+            "annee": 2017,
+            "note": 97,
+            "description": "Un Chardonnay bourguignon d'une rare élégance, avec des arômes de fruits blancs, de noisettes et de beurre frais.",
+            "recommandation": "Accompagnez-le avec des homards grillés.",
+            "image": "lien_vers_image28.jpg"
+          },  
+          {
+              "nom": "Domaine Leflaive",
+              "region": "Bourgogne",
+              "cepage": "Chardonnay",
+              "type": "Blanc",
+              "annee": 2018,
+              "note": 94,
+              "description": "Un Puligny-Montrachet élégant et minéral, avec des arômes de citron, de beurre frais et de noisettes.",
+              "recommandation": "Servez-le avec des plats à base de fruits de mer.",
+              "image": "lien_vers_image30.jpg"
+          },
+          // ... autres vins
+        ]
+      }
+    </pre>
+  
+    <h2>GET vins par cépage /cepage/:cepage</h2>
+    <p>Renvoie liste de vins en fonction de son cépage.</p>
+    <code>GET /cepage/:cepage</code>
+    <p>Exemple de chemin</p>
+    <code>http://localhost:3000/cepage/pinot-noir</code>
+    <p>Exemple de réponse :</p>
+    <pre>
+      {
+        "vins": [
+          {
+            "nom": "Château de la Tour",
+            "region": "Bourgogne",
+            "cepage": "Pinot Noir",
+            "type": "Rouge",
+            "annee": 2017,
+            "note": 92,
+            "description": "Un vin rouge de la Côte de Nuits, il se distingue par ses arômes de fruits rouges et d'épices douces.",
+            "recommandation": "Accompagnez-le avec un coq au vin.",
+            "image": "lien_vers_image16.jpg"
+          },
+          {
+            "nom": "Domaine de la Vougeraie",
+            "region": "Bourgogne",
+            "cepage": "Pinot Noir",
+            "type": "Rouge",
+            "annee": 2017,
+            "note": 91,
+            "description": "Un Pinot Noir de Bourgogne avec des arômes subtils de cerises et de roses. Il séduit par sa finesse et son équilibre.",
+            "recommandation": "Accompagnez-le avec un plateau de fromages variés.",
+            "image": "lien_vers_image12.jpg"
+          },
+          // ... autres vins
+        ]
+      }
+    </pre>
+
+    <h2>GET vins par type /type/:type</h2>
+    <p>Renvoie liste de vins en fonction de son type.</p>
+    <code>GET /type/:type</code>
+    <p>Exemple de chemin</p>
+    <code>http://localhost:3000/type/rouge</code>
+    <p>Exemple de réponse :</p>
+    <pre>
+      {
+        "vins": [
+          {
+            "nom": "Château Mouton Rothschild",
+            "region": "Bordeaux",
+            "cepage": "Cabernet Sauvignon",
+            "type": "Rouge",
+            "annee": 2016,
+            "note": 97,
+            "description": "Un Pauillac de renommée mondiale, il dévoile des saveurs de cassis, de tabac et de cèdre, avec une grande complexité.",
+            "recommandation": "Servez-le avec un tournedos Rossini.",
+            "image": "lien_vers_image23.jpg"
+          },
+          {
+              "nom": "Domaine de la Grange des Pères",
+              "region": "Languedoc",
+              "cepage": "Syrah",
+              "type": "Rouge",
+              "annee": 2018,
+              "note": 92,
+              "description": "Un vin rouge du Languedoc d'une grande intensité, avec des notes de fruits noirs et de réglisse.",
+              "recommandation": "Accompagnez-le avec des plats méditerranéens épicés.",
+              "image": "lien_vers_image24.jpg"
+          },
+          // ... autres vins
+        ]
+      }
+    </pre>
+
+    <h2>GET vins par année /annee/:annee</h2>
+    <p>Renvoie une liste de vins en fonction de son année.</p>
+    <code>GET /annee/:annee</code>
+    <p>Exemple de chemin</p>
+    <code>http://localhost:3000/annee/2019</code>
+    <p>Exemple de réponse :</p>
+    <pre>
+      {
+        "vins": [
+          {
+            "nom": "Domaine Huet",
+            "region": "Loire",
+            "cepage": "Chenin Blanc",
+            "type": "Blanc",
+            "annee": 2019,
+            "note": 94,
+            "description": "Un Vouvray sec et minéral, avec des arômes de pomme verte et de fleurs blanches.",
+            "recommandation": "Idéal en apéritif ou avec des plats de poissons.",
+            "image": "lien_vers_image22.jpg"
+          },      
+          {
+              "nom": "Clos des Papes",
+              "region": "Rhône",
+              "cepage": "Grenache",
+              "type": "Rouge",
+              "annee": 2019,
+              "note": 95,
+              "description": "Un Châteauneuf-du-Pape rouge riche et équilibré, avec des arômes de cerises noires, de garrigue et d'épices.",
+              "recommandation": "Servez-le avec des plats de viande en sauce.",
+              "image": "lien_vers_image27.jpg"
+          },
+          // ... autres vins
+        ]
+      }
+    </pre>
+
+    <h2>GET vins par note minimale /note/:note</h2>
+    <p>Renvoie une liste de vins en fonction d'une note minimale.</p>
+    <code>GET /note/:note</code>
+    <p>Exemple de chemin</p>
+    <code>http://localhost:3000/note/95</code>
+    <pre>
+      {
+        "vins": [
+          {
+            "nom": "Château Haut-Brion",
+            "region": "Bordeaux",
+            "cepage": "Merlot",
+            "type": "Rouge",
+            "annee": 2016,
+            "note": 97,
+            "description": "Un vin rouge de Pessac-Léognan, il présente des saveurs de cassis, de tabac et de cuir, avec une grande profondeur.",
+            "recommandation": "Parfait pour accompagner un plat de côte de bœuf grillée.",
+            "image": "lien_vers_image13.jpg"
+          },     
+          {
+              "nom": "Château Mouton Rothschild",
+              "region": "Bordeaux",
+              "cepage": "Cabernet Sauvignon",
+              "type": "Rouge",
+              "annee": 2016,
+              "note": 97,
+              "description": "Un Pauillac de renommée mondiale, il dévoile des saveurs de cassis, de tabac et de cèdre, avec une grande complexité.",
+              "recommandation": "Servez-le avec un tournedos Rossini.",
+              "image": "lien_vers_image23.jpg"
+          },
+          {
+            "nom": "Château Cheval Blanc",
+            "region": "Bordeaux",
+            "cepage": "Merlot",
+            "type": "Rouge",
+            "annee": 2015,
+            "note": 98,
+            "description": "Un vin rouge de Saint-Émilion, il marie la puissance du Merlot avec l'élégance du Cabernet Franc. Arômes de cerises noires et de violette.",
+            "recommandation": "Servez-le avec un confit de canard.",
+            "image": "lien_vers_image15.jpg"
+          },
+          // ... autres vins
+        ]
+      }
+    </pre>
+
+  </body>
+</html>

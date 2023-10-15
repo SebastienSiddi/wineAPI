@@ -1,0 +1,211 @@
+[
+    {
+        "nom": "Domaine de la Vougeraie",
+        "region": "Bourgogne",
+        "cepage": "Pinot Noir",
+        "type": "Rouge",
+        "annee": 2017,
+        "note": 91,
+        "description": "Un Pinot Noir de Bourgogne avec des arômes subtils de cerises et de roses. Il séduit par sa finesse et son équilibre.",
+        "recommandation": "Accompagnez-le avec un plateau de fromages variés.",
+        "image": "lien_vers_image12.jpg"
+    },
+    {
+        "nom": "Château Haut-Brion",
+        "region": "Bordeaux",
+        "cepage": "Merlot",
+        "type": "Rouge",
+        "annee": 2016,
+        "note": 97,
+        "description": "Un vin rouge de Pessac-Léognan, il présente des saveurs de cassis, de tabac et de cuir, avec une grande profondeur.",
+        "recommandation": "Parfait pour accompagner un plat de côte de bœuf grillée.",
+        "image": "lien_vers_image13.jpg"
+    },
+    {
+        "nom": "Domaine Zind-Humbrecht",
+        "region": "Alsace",
+        "cepage": "Riesling",
+        "type": "Blanc",
+        "annee": 2018,
+        "note": 94,
+        "description": "Un Riesling d'Alsace sec et minéral, avec des arômes de pêche et d'agrumes. Il reflète la pureté du terroir alsacien.",
+        "recommandation": "Idéal en apéritif ou avec des fruits de mer.",
+        "image": "lien_vers_image14.jpg"
+    },
+    {
+        "nom": "Château Cheval Blanc",
+        "region": "Bordeaux",
+        "cepage": "Merlot",
+        "type": "Rouge",
+        "annee": 2015,
+        "note": 98,
+        "description": "Un vin rouge de Saint-Émilion, il marie la puissance du Merlot avec l'élégance du Cabernet Franc. Arômes de cerises noires et de violette.",
+        "recommandation": "Servez-le avec un confit de canard.",
+        "image": "lien_vers_image15.jpg"
+    },
+    {
+        "nom": "Château de la Tour",
+        "region": "Bourgogne",
+        "cepage": "Pinot Noir",
+        "type": "Rouge",
+        "annee": 2017,
+        "note": 92,
+        "description": "Un vin rouge de la Côte de Nuits, il se distingue par ses arômes de fruits rouges et d'épices douces.",
+        "recommandation": "Accompagnez-le avec un coq au vin.",
+        "image": "lien_vers_image16.jpg"
+    },
+    {
+        "nom": "Château Simone",
+        "region": "Provence",
+        "cepage": "Grenache",
+        "type": "Rosé",
+        "annee": 2019,
+        "note": 90,
+        "description": "Un rosé de Palette avec des arômes de fruits rouges et une belle minéralité. Frais et équilibré.",
+        "recommandation": "Idéal pour des apéritifs en terrasse.",
+        "image": "lien_vers_image17.jpg"
+    },
+    {
+        "nom": "Domaine Leroy",
+        "region": "Bourgogne",
+        "cepage": "Chardonnay",
+        "type": "Blanc",
+        "annee": 2015,
+        "note": 96,
+        "description": "Un Chardonnay bourguignon d'une grande complexité, avec des notes de beurre, de noisettes et de miel.",
+        "recommandation": "Accompagnez-le avec des fruits de mer grillés.",
+        "image": "lien_vers_image18.jpg"
+    },
+    {
+        "nom": "Château Palmer",
+        "region": "Bordeaux",
+        "cepage": "Merlot",
+        "type": "Rouge",
+        "annee": 2016,
+        "note": 95,
+        "description": "Un vin rouge de Margaux, il offre des arômes de fruits noirs, d'épices et de réglisse, avec une grande élégance.",
+        "recommandation": "Servez-le avec un filet de bœuf aux morilles.",
+        "image": "lien_vers_image19.jpg"
+    },
+    {
+        "nom": "Domaine Tempier",
+        "region": "Provence",
+        "cepage": "Mourvèdre",
+        "type": "Rosé",
+        "annee": 2020,
+        "note": 91,
+        "description": "Un rosé de Bandol, avec des arômes de fruits noirs et de garrigue. Structuré et corsé.",
+        "recommandation": "Accompagnez-le avec des grillades méditerranéennes.",
+        "image": "lien_vers_image20.jpg"
+    },
+    {
+        "nom": "Château d'Armailhac",
+        "region": "Bordeaux",
+        "cepage": "Cabernet Sauvignon",
+        "type": "Rouge",
+        "annee": 2017,
+        "note": 93,
+        "description": "Un Pauillac élégant, avec des arômes de cassis, de mûres et de cuir. Structuré et puissant.",
+        "recommandation": "Parfait pour accompagner des plats de viande rouge grillée.",
+        "image": "lien_vers_image21.jpg"
+    },
+    {
+        "nom": "Domaine Huet",
+        "region": "Loire",
+        "cepage": "Chenin Blanc",
+        "type": "Blanc",
+        "annee": 2019,
+        "note": 94,
+        "description": "Un Vouvray sec et minéral, avec des arômes de pomme verte et de fleurs blanches.",
+        "recommandation": "Idéal en apéritif ou avec des plats de poissons.",
+        "image": "lien_vers_image22.jpg"
+    },
+    {
+        "nom": "Château Mouton Rothschild",
+        "region": "Bordeaux",
+        "cepage": "Cabernet Sauvignon",
+        "type": "Rouge",
+        "annee": 2016,
+        "note": 97,
+        "description": "Un Pauillac de renommée mondiale, il dévoile des saveurs de cassis, de tabac et de cèdre, avec une grande complexité.",
+        "recommandation": "Servez-le avec un tournedos Rossini.",
+        "image": "lien_vers_image23.jpg"
+    },
+    {
+        "nom": "Domaine de la Grange des Pères",
+        "region": "Languedoc",
+        "cepage": "Syrah",
+        "type": "Rouge",
+        "annee": 2018,
+        "note": 92,
+        "description": "Un vin rouge du Languedoc d'une grande intensité, avec des notes de fruits noirs et de réglisse.",
+        "recommandation": "Accompagnez-le avec des plats méditerranéens épicés.",
+        "image": "lien_vers_image24.jpg"
+    },
+    {
+        "nom": "Château Simone",
+        "region": "Provence",
+        "cepage": "Clairette",
+        "type": "Blanc",
+        "annee": 2020,
+        "note": 91,
+        "description": "Un blanc de Palette avec des arômes de fleurs blanches et de fruits à chair blanche. Équilibré et frais.",
+        "recommandation": "Idéal pour des apéritifs en terrasse.",
+        "image": "lien_vers_image25.jpg"
+    },
+    {
+        "nom": "Château Climens",
+        "region": "Bordeaux",
+        "cepage": "Sémillon",
+        "type": "Blanc",
+        "annee": 2015,
+        "note": 96,
+        "description": "Un vin blanc liquoreux de Barsac, il offre des arômes de miel, d'abricot et d'agrumes confits.",
+        "recommandation": "Accompagnez-le avec un foie gras poêlé.",
+        "image": "lien_vers_image26.jpg"
+    },
+    {
+        "nom": "Clos des Papes",
+        "region": "Rhône",
+        "cepage": "Grenache",
+        "type": "Rouge",
+        "annee": 2019,
+        "note": 95,
+        "description": "Un Châteauneuf-du-Pape rouge riche et équilibré, avec des arômes de cerises noires, de garrigue et d'épices.",
+        "recommandation": "Servez-le avec des plats de viande en sauce.",
+        "image": "lien_vers_image27.jpg"
+    },
+    {
+        "nom": "Domaine Coche-Dury",
+        "region": "Bourgogne",
+        "cepage": "Chardonnay",
+        "type": "Blanc",
+        "annee": 2017,
+        "note": 97,
+        "description": "Un Chardonnay bourguignon d'une rare élégance, avec des arômes de fruits blancs, de noisettes et de beurre frais.",
+        "recommandation": "Accompagnez-le avec des homards grillés.",
+        "image": "lien_vers_image28.jpg"
+    },
+    {
+        "nom": "Château Rauzan-Ségla",
+        "region": "Bordeaux",
+        "cepage": "Merlot",
+        "type": "Rouge",
+        "annee": 2016,
+        "note": 93,
+        "description": "Un Margaux élégant avec des arômes de fruits rouges, de violette et de cuir. Structuré et séduisant.",
+        "recommandation": "Parfait pour accompagner un confit de canard.",
+        "image": "lien_vers_image29.jpg"
+    },
+    {
+        "nom": "Domaine Leflaive",
+        "region": "Bourgogne",
+        "cepage": "Chardonnay",
+        "type": "Blanc",
+        "annee": 2018,
+        "note": 94,
+        "description": "Un Puligny-Montrachet élégant et minéral, avec des arômes de citron, de beurre frais et de noisettes.",
+        "recommandation": "Servez-le avec des plats à base de fruits de mer.",
+        "image": "lien_vers_image30.jpg"
+    }
+]
