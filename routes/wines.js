@@ -1,5 +1,3 @@
-const diacritics = require("diacritics");
-
 var express = require("express");
 var router = express.Router();
 
